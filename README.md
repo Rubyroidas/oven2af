@@ -1,75 +1,36 @@
-# React + TypeScript + Vite
+# Oven → Air Fryer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A tiny installable web app that converts your oven's temperature and cook time into the equivalent air fryer settings.
 
-Currently, two official plugins are available:
+Set your oven temp and time on two scroll-wheel dials (just like the pickers in iOS), and the air fryer numbers update instantly below. Defaults to 390°F / 20 min, but remembers whatever you last used.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Scroll-wheel pickers** for temperature and time — drag with a mouse, swipe on touch, or use the mouse wheel.
+- **°F / °C toggle**, with the temperature dial converting and re-snapping automatically.
+- **Adjustable formula** — tap the gear icon to tune how much cooler and faster your air fryer runs than your oven (defaults: −25°F, 80% of the time). Your settings and last-used values are saved to `localStorage`, so they're there next time you open the app.
+- **Installable PWA** — add it to your home screen on iOS/Android or install it as a desktop app; it works offline once loaded.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running it locally
 
-## Expanding the ESLint configuration
+Requires [Node.js](https://nodejs.org/).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open the printed local URL in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Other scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command | What it does |
+| --- | --- |
+| `npm run build` | Type-checks and builds a production bundle into `dist/` |
+| `npm run preview` | Serves the production build locally |
+| `npm run lint` | Runs ESLint |
+| `npm run lint:fix` | Runs ESLint and auto-fixes what it can |
 
-```
+## Tech stack
+
+Built with [Vite](https://vite.dev/), [React](https://react.dev/), and TypeScript, with [`vite-plugin-pwa`](https://vite-pwa-org.netlify.app/) handling the service worker and web manifest.
