@@ -1,44 +1,44 @@
 :root {
-  --bg: #15120d;
-  --surface: #201a13;
-  --surface-raised: #2a2216;
-  --hairline: rgba(243, 236, 223, 0.09);
-  --text: #f3ecdf;
-  --muted: #8a8172;
-  --accent: #ff8a3d;
-  --accent2: #35d6c0;
-  --accent-dim: rgba(255, 138, 61, 0.14);
+    --bg: #15120d;
+    --surface: #201a13;
+    --surface-raised: #2a2216;
+    --hairline: rgba(243, 236, 223, 0.09);
+    --text: #f3ecdf;
+    --muted: #8a8172;
+    --accent: #ff8a3d;
+    --accent2: #35d6c0;
+    --accent-dim: rgba(255, 138, 61, 0.14);
 
-  --sans: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
+    --sans: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
 
-  font: 16px/145% var(--sans);
-  color-scheme: dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font: 16px/145% var(--sans);
+    color-scheme: dark;
+    color: var(--text);
+    background: var(--bg);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  min-height: 100svh;
-  background: var(--bg);
+    margin: 0;
+    min-height: 100svh;
+    background: var(--bg);
 }
 
 #root {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
 }
 
 button {
-  font: inherit;
+    font: inherit;
 }

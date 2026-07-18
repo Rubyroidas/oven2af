@@ -1,82 +1,82 @@
 .reel {
-  position: relative;
-  height: 240px; /* 5 rows * 48px */
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #000 22%,
-    #000 78%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #000 22%,
-    #000 78%,
-    transparent 100%
-  );
+    position: relative;
+    height: 240px; /* 5 rows * 48px */
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        #000 22%,
+        #000 78%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        #000 22%,
+        #000 78%,
+        transparent 100%
+    );
 }
 
 .reel__highlight {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 48px;
-  transform: translateY(-50%);
-  border-top: 1px solid var(--hairline);
-  border-bottom: 1px solid var(--hairline);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 138, 61, 0.08),
-    rgba(53, 214, 192, 0.08)
-  );
-  pointer-events: none;
-  z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 48px;
+    transform: translateY(-50%);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 138, 61, 0.08),
+        rgba(53, 214, 192, 0.08)
+    );
+    pointer-events: none;
+    z-index: 1;
 }
 
 .reel__scroller {
-  height: 100%;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  cursor: grab;
-  touch-action: pan-y;
+    height: 100%;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    touch-action: pan-y;
 }
 
 .reel__scroller:active {
-  cursor: grabbing;
-  scroll-snap-type: none;
+    cursor: grabbing;
+    scroll-snap-type: none;
 }
 
 .reel__scroller::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .reel__pad {
-  height: 96px; /* 2 * item height, centers first/last item */
-  scroll-snap-align: none;
+    height: 96px; /* 2 * item height, centers first/last item */
+    scroll-snap-align: none;
 }
 
 .reel__item {
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  scroll-snap-align: center;
-  font-family: var(--mono);
-  font-variant-numeric: tabular-nums;
-  font-size: 22px;
-  color: var(--muted);
-  transition: color 0.15s ease, transform 0.15s ease;
-  cursor: pointer;
-  user-select: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 22px;
+    color: var(--muted);
+    transition: color 0.15s ease, transform 0.15s ease;
+    cursor: pointer;
+    user-select: none;
 }
 
 .reel__item--active {
-  color: var(--text);
-  font-size: 30px;
-  font-weight: 600;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 600;
 }
