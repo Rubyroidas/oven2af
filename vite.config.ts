@@ -11,7 +11,7 @@ export default defineConfig({
             includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
             manifest: {
                 name: 'Oven to Air Fryer',
-                short_name: 'Oven2AF',
+                short_name: 'Oven to Air Fryer',
                 description: 'Convert oven temperature and time to air fryer settings.',
                 theme_color: '#15120D',
                 background_color: '#15120D',
