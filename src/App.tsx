@@ -200,14 +200,14 @@ function ArrowIcon() {
     return (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
-                d="M4 12h16m0 0-6-6m6 6-6 6"
+                d="M12 4v16m0 0-6-6m6 6 6-6"
                 stroke="url(#arrow-grad)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             />
             <defs>
-                <linearGradient id="arrow-grad" x1="4" y1="12" x2="20" y2="12">
+                <linearGradient id="arrow-grad" x1="12" y1="4" x2="12" y2="20">
                     <stop stopColor="var(--accent)" />
                     <stop offset="1" stopColor="var(--accent2)" />
                 </linearGradient>
