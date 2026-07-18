@@ -1,46 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <defs>
-    <radialGradient id="bg" cx="30%" cy="20%" r="90%">
-      <stop offset="0%" stop-color="#2B2419"/>
-      <stop offset="100%" stop-color="#15120D"/>
-    </radialGradient>
-    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#35D6C0"/>
-      <stop offset="100%" stop-color="#FF8A3D"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="air-fryer-outline-gradient-clean.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showguides="true"
+     inkscape:zoom="1.3030376"
+     inkscape:cx="52.953192"
+     inkscape:cy="651.17077"
+     inkscape:window-width="3840"
+     inkscape:window-height="2089"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9">
+    <sodipodi:guide
+       position="409,455"
+       orientation="1,0"
+       id="guide9"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="615.10121,506"
+       orientation="1,0"
+       id="guide10"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <title
+     id="title">Gradient outline air fryer icon</title>
+  <desc
+     id="desc">Transparent square icon showing an air fryer drawn only with an orange-to-teal gradient outline, without any inner shadow line.</desc>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="accent"
+       x1="240"
+       y1="210"
+       x2="790"
+       y2="850"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#ff8a3d"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#35d6c0"
+         id="stop2" />
     </linearGradient>
   </defs>
-
-  <rect width="512" height="512" fill="url(#bg)"/>
-
-  <!-- arched carry handle -->
-  <path
-    d="M146,132 Q256,26 366,132"
-    fill="none"
-    stroke="url(#grad)"
-    stroke-width="16"
-    stroke-linecap="round"
-  />
-
-  <!-- air fryer body outline -->
-  <rect x="112" y="118" width="288" height="52" rx="26" fill="none" stroke="url(#grad)" stroke-width="14"/>
-  <path
-    d="M132,164 L380,164 L358,368 Q356,392 330,392 L182,392 Q156,392 154,368 Z"
-    fill="none"
-    stroke="url(#grad)"
-    stroke-width="14"
-    stroke-linejoin="round"
-  />
-
-  <!-- digital display -->
-  <rect x="216" y="192" width="80" height="40" rx="8" fill="none" stroke="url(#grad)" stroke-width="10"/>
-  <line x1="230" y1="212" x2="240" y2="212" stroke="url(#grad)" stroke-width="8" stroke-linecap="round"/>
-  <line x1="256" y1="212" x2="266" y2="212" stroke="url(#grad)" stroke-width="8" stroke-linecap="round"/>
-
-  <!-- control buttons -->
-  <circle cx="222" cy="256" r="8" fill="none" stroke="url(#grad)" stroke-width="7"/>
-  <circle cx="256" cy="256" r="8" fill="none" stroke="url(#grad)" stroke-width="7"/>
-  <circle cx="290" cy="256" r="8" fill="none" stroke="url(#grad)" stroke-width="7"/>
-
-  <!-- drawer handle -->
-  <rect x="198" y="326" width="116" height="18" rx="9" fill="none" stroke="url(#grad)" stroke-width="9"/>
+  <rect
+     width="1024"
+     height="1024"
+     fill="#000000"
+     id="bg-rect" />
+  <g
+     fill="none"
+     stroke="url(#accent)"
+     stroke-width="28"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g9">
+    <path
+       d="M454 199 H570"
+       id="path2" />
+    <path
+       d="M486 199 V174 H538 V199"
+       id="path3" />
+    <path
+       d="M309 246              C260 246 225 280 216 337              L181 611              C172 687 189 760 237 812              C274 852 326 874 389 874              H635              C698 874 750 852 787 812              C835 760 852 687 843 611              L808 337              C799 280 764 246 715 246              Z"
+       id="path4" />
+    <path
+       d="M194 532 C374 544 650 544 830 532"
+       id="path5" />
+    <circle
+       cx="512"
+       cy="386"
+       r="88"
+       id="circle5" />
+    <path
+       d="M512 281 V391"
+       id="path6" />
+    <path
+       d="m 407,544 v 50 c 0,36 19,58 46,69 v 99 c 0,37 27,62 60,62 33,0 60,-25 60,-62 v -99 c 27,-11 42,-33 42,-69 v -50"
+       id="path7"
+       sodipodi:nodetypes="cscssscsc" />
+    <path
+       d="M300 874 V902 H372 V874"
+       id="path8" />
+    <path
+       d="M652 874 V902 H724 V874"
+       id="path9" />
+  </g>
 </svg>
