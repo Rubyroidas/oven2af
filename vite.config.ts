@@ -10,7 +10,7 @@ export default defineConfig({
             registerType: 'autoUpdate',
             includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
             manifest: {
-                name: 'Oven → Air Fryer cooking converter',
+                name: 'Oven to Air Fryer',
                 short_name: 'Oven2AF',
                 description: 'Convert oven temperature and time to air fryer settings.',
                 theme_color: '#15120D',

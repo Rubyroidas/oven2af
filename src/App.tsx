@@ -75,7 +75,7 @@ function App() {
     return (
         <div className="app">
             <header className="app__header">
-                <div className="app__eyebrow">Oven &rarr; Air Fryer</div>
+                <div className="app__eyebrow">Oven &rarr; Air Fryer cooking converter</div>
                 <button
                     className="app__settings-btn"
                     aria-label="Open formula settings"
